@@ -11,4 +11,8 @@ Vagrant.configure("2") do |config|
     # Optional NFS. Make sure to remove other synced_folder line too
     #config.vm.synced_folder ".", "/var/www", :nfs => { :mount_options => ["dmode=777","fmode=666"] }
 
+  config.vm.provision "file", source: "./structure.sql", destination: "structure.sql"
+  config.vm.provision "file", source: "./data.sql", destination: "data.sql"
+  config.vm.provision "shell", path: "sql.sh"
+
 end

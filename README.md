@@ -1,3 +1,10 @@
+Food Co-op Dev Box
+==================
+Checkout the food co-op project into `public/food-coop`.
+View at `http://192.168.33.10/food-coop/web/`.
+
+Test user is `test@example.com`, password is `test`
+
 Scotch Box
 ==========
 
